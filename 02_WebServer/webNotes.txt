@@ -1,0 +1,63 @@
+what is Server?
+A server is basically a computer or a system that provides services, data, or resources to other
+computers, known as clients, over a network (like the Internet or a local network).
+
+📌 Real-Life Example:
+When you open Google.com:
+-> Your device (the client) sends a request to Google’s server.
+-> The server processes your request and sends the webpage back to your browser.
+
+🖥 Types of Servers:
+Type	                              What It Does	                                     Example
+Web Server	                  Serves web pages (HTML, CSS, JS)	                     Apache, Nginx
+Application Server	               Runs application logic	                    Node.js, Java Spring Boot
+Database Server	                   Stores and manages data	                      MySQL, MongoDB, PostgreSQL
+File Server                	Manages and provides file storage	               Google Drive, Dropbox backend
+Mail Server                	Handles email sending/receiving	                  Gmail server, Outlook server
+
+🌐 What is HTTP (HyperText Transfer Protocol)?
+HTTP is a protocol — a set of rules — that defines how data is requested and transmitted over the 
+web between clients (browsers/apps) and servers.
+It’s like a language that allows communication between your browser and the web server.
+
+
+🌐 What is an HTTP Request?
+An HTTP request is a message sent by a client (usually a browser or an app) to a server asking for 
+some resource or action over the HyperText Transfer Protocol (HTTP).
+✅ The client: The user’s web browser or application.
+✅ The server: A machine or software that responds with the requested data.
+
+📝 Basic Structure of an HTTP Request:
+-> METHOD /path HTTP/version
+-> Headers
+(blank line)
+-> Request Body (only for some types of requests)
+
+🔑 Key Parts of an HTTP Request:
+Part	                                   What It Means	                              Example
+Request Line	                     Tells the server what you want         	GET /index.html HTTP/1.1
+Headers	                               Extra information (metadata)	        Content-Type: application/json
+Body (optional)	                     Data you’re sending to the server	           { "name": "Abbad" }
+
+🚀 Common HTTP Request Methods:
+Method	                              Meaning	                            Example Use
+GET	                           Request data (read only)            Load a webpage, get user data
+POST	                        Send new data to the server	          Submit form, create user
+PUT	                               Update existing data	                Update profile info
+DELETE	                               Remove data	                     Delete an account
+PATCH	                           Partially update data	           Update just one field
+
+🔄 How HTTP Request Works (Step-by-Step):
+1️⃣ Client (Browser or App) → Sends an HTTP Request.
+2️⃣ Server → Receives the request, processes it.
+3️⃣ Server → Sends back an HTTP Response (status + data).
+4️⃣ Client → Displays or uses the response.
+
+📊 Status Codes (in the Response):
+Code	                Meaning
+200	                 OK (Success)
+201	              Created (POST success)
+400	                  Bad Request
+401                	Unauthorized
+404	                    Not Found
+500                	   Server Error
